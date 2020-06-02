@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./startAll.sh
+
+curl 'http://ec2-3-228-1-232.compute-1.amazonaws.com:8080/nifi-api/processors/e4f233ea-8fff-1388-8de9-c6d36bb33949/run-status' \   -X 'PUT' \   -H 'Connection: keep-alive' \   -H 'Accept: application/json, text/javascript, */*; q=0.01' \   -H 'X-Requested-With: XMLHttpRequest' \   -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36' \   -H 'Content-Type: application/json' \   -H 'Origin: http://ec2-3-228-1-232.compute-1.amazonaws.com:8080' \   -H 'Referer: http://ec2-3-228-1-232.compute-1.amazonaws.com:8080/nifi/?processGroupId=root&componentIds=e4f233ea-8fff-1388-8de9-c6d36bb33949' \   -H 'Accept-Language: en-US,en;q=0.9' \   -H 'Cookie: __utmc=123066783; __utmz=123066783.1591034278.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); SESSION=542c4ed1-f06c-4738-97ab-638faeb42837; __utma=123066783.1823792006.1591034278.1591034278.1591039988.2' \   --data-binary '{"revision":{"clientId":"e4f23e92-8fff-1388-8d25-d6b11231ff22","version":9},"state":"RUNNING","disconnectedNodeAcknowledged":false}' \   --compressed \   --insecure
